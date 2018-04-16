@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic form using JS</title>
+    <script type="text/javascript">
+
+      function ourForm() {
+        var a = document.this_form.name.value;
+        if(a==null||a=="") {
+          alert("Enter your Name: ");
+          return false;
+        }
+        var b = document.this_form.address.value;
+        if(b==null||b=="") {
+          alert("Enter your Address: ");
+          return false;
+        }
+        var c = document.this_form.age.value;
+        if(c==null||c=="") {
+          alert("Enter your Age: ");
+          return false;
+        }
+        var data = document.this_form.email.value;
+        var j = data.indexOf("@");
+        var i = data.indexOf(".");
+        // var diff = parseInt(i) + parseInt(j);
+        // var k = parseInt(j) + 1;
+        // var c = data.charAt(k);
+        // console.log(j);
+        // console.log(i);
+        // console.log(diff);
+        // console.log(k);
+        // console.log(c);
+
+        if(i<1||j<=1||c=="") {
+          alert("Invalid e-mail address");
+          document.this_form.email.focus();
+        }
+        if((this_form.gender.checked==false)&&(this_form.gender.checked==false)) {
+          alert("Select Gender:");
+        }
+
+      }
+    </script>
+
+  </head>
+  <body>
+    <form class="" name="this_form" action="" method="get" onsubmit="return false">
+      Name:<br><input type="text" name="name"><br>
+      Age:<br><input type="text" name="age" value=""><br>
+      Address:<br><input type="text" name="address" value=""><br>
+      E-Mail Address:<br><input type="text" name="email" value=""><br>
+      Gender:<br>
+        <input type="radio" name="gender" value="">Female<br>
+        <input type="radio" name="gender" value="">Male<br>
+      You live in:
+      <select class="" name="country" size="1"><br>
+        <option value="ind">India</option>
+        <option value="arg">Argentina</option>
+        <option value="us">Untied States of America</option>
+        <option value="chi">China</option>
+        <option value="ca">Canda</option>
+        <option value="jp">Japan</option>
+        <option value="ru">Russia</option>
+      </select>
+
+      <br><br><input type="submit" name="submit" value="Submit" onclick="ourForm()">
+    </form>
+
+  </body>
+</html>
