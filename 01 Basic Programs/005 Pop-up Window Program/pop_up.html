@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function popup() {
+        var a = confirm("Click OK to see to Google Homepage or CANCEL to see Bing Homepage ");
+        if (a==true) {
+          window.location="http://google.com/";
+        }
+        else {
+          window.location="http://www.bing.com/";
+        }
+      }
+    </script>
+    <form>
+      <input type="button" name="" value="Click Here" onclick="popup()">
+    </form>
+  </body>
+</html>

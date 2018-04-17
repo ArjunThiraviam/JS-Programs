@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Click here to remove last element from array.</p>
+
+    <button type="button" name="button" onclick="pop_element()">Pop elements</button>
+    <button type="button" name="button" onclick="push_element()">Push elements</button>
+
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+      var fruits =["Red","Yellow","Green","Blue"];
+      document.getElementById("demo").innerHTML = fruits;
+
+      function pop_element() {
+        fruits.pop();
+        document.getElementById("demo").innerHTML = fruits;
+      }
+      function push_element() {
+        fruits.push("Black","White");
+        document.getElementById("demo").innerHTML = fruits;
+      }
+    </script>
+  </body>
+</html>
