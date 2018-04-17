@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prime Number without Function</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var i, flag=0,j,n;
+
+      n =prompt("Enter any number upto which you want to find prime numbers: ");
+
+      document.write("The prime number till the number you entered are 1,2");
+
+      for(i=3;i<n;i++) {
+        for(j=2;j<i;j++) {
+          console.log("j " + j);
+          console.log("i "+ i);
+          if(i%j!=0) {
+            flag = 0;
+            console.log("i "+ i +" / j " + j +" != 0");
+          }
+          else {
+            flag = 1;
+            console.log("i "+ i +" / j " + j +" = 0");
+            break;
+          }
+          console.log("i "+i);
+        }
+        if(flag==0) {
+          document.write(",",+i);
+          console.log( i + " number added");
+        }
+        console.log("loop ends");
+      }
+    </script>
+  </body>
+</html>
