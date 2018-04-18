@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dropdown Menu</title>
+    <script type="text/javascript">
+      function change_color() {
+        if(window.document.form1.color.selectedIndex==0) {
+          document.bgColor="Red";
+        }
+        if(window.document.form1.color.selectedIndex==1) {
+          document.bgColor="Green";
+        }
+        if(window.document.form1.color.selectedIndex==2) {
+          document.bgColor="Blue";
+        }
+        if(window.document.form1.color.selectedIndex==3) {
+          document.bgColor="Pink";
+        }
+        if(window.document.form1.color.selectedIndex==4) {
+          document.bgColor="Yellow";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Select the color you want:<br>
+
+    <form name="form1">
+      <select class="" name="color" onchange="change_color()">
+        <option name="red">Red</option>
+        <option name="red">Green</option>
+        <option name="red">Blue</option>
+        <option name="red">Pink</option>
+        <option name="red">Yellow</option>
+      </select>
+    </form>
+  </body>
+</html>
