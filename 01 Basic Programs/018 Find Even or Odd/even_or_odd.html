@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Find Even or Odd</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var number;
+      number=prompt("Enter a number to find odd or even : ");
+      number=parseInt(number);
+
+      if(isNaN(number)){
+        alert("Please enter a number");
+      }
+      else  if(number ==0){
+        alert("The number is zero");
+      }
+      else if (number%2 == 0) {
+        alert("The number is even");
+      }
+      else {
+        alert("The number is odd");
+      }
+    </script>
+  </body>
+</html>
