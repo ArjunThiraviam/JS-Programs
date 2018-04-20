@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Object Constructor Function</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Rectangle(w,h) {
+        this.width = w;
+        this.height = h;
+      }
+
+      //invoking Constructor
+      R1 = new Rectangle (7,5);
+      R2 = new Rectangle(12.5,3.6);
+
+      var area;
+
+      document.write("The width and height of 1st rectangle is : " + R1.width + " and " + R1.height);
+      area= R1.width * R1.height;
+
+      document.write("<br> Area of rectangle is : " + area);
+
+      document.write("<br><br>The width and height of 2nd rectangle is :" + R2.width + " and " + R2.height);
+      area = R2.width * R2.height;
+
+      document.write("<br>Area of rectangle is : " + area);
+    </script>
+  </body>
+</html>
