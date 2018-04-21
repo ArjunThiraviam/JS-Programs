@@ -25,11 +25,11 @@
         var j = data.indexOf("@");
         var i = data.indexOf(".");
 
-        if(i<1||j<=1||c=="") {
+        if(i<1||j<1||data=="") {
           alert("Invalid e-mail address");
           document.this_form.email.focus();
         }
-        if((this_form.gender.checked==false)&&(this_form.gender.checked==false)) {
+        if((this_form.genderm.checked==false)&&(this_form.genderf.checked==false)) {
           alert("Select Gender:");
         }
       }
@@ -43,8 +43,8 @@
       Address:<br><input type="text" name="address" value=""><br>
       E-Mail Address:<br><input type="text" name="email" value=""><br>
       Gender:<br>
-        <input type="radio" name="gender" value="">Female<br>
-        <input type="radio" name="gender" value="">Male<br>
+        <input type="radio" name="genderm" value="">Female<br>
+        <input type="radio" name="genderf" value="">Male<br>
       You live in:
       <select class="" name="country" size="1"><br>
         <option value="ind">India</option>
