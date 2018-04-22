@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Find Leap Year</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      year = window.prompt("Enter a year of your choice");
+
+      if (year % 400 ==0) {
+        document.write(year +" is a leap year");
+      }
+      else if (year% 4 ==0 && year %100 !==0) {
+        document.write(year +" is a leap year");
+      }
+      else {
+        document.write(year +" is not a leap year");
+      }
+
+    </script>
+  </body>
+</html>
