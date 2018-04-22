@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculate Area of Triangle</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var side1 = 6;
+      var base = 5;
+      var side3 = 8;
+
+      var perimeter = (side1 + base + side3);
+      document.write("<br>Perimeter of Triangle " + perimeter);
+
+      var semi_perimeter = perimeter/2;
+      document.write("<br>Semi-Perimeter of Triangle " + semi_perimeter);
+
+      var area = Math.sqrt(semi_perimeter*((semi_perimeter-side1)*(semi_perimeter-base)*(semi_perimeter-side3)));
+
+      document.write("<br>Area of Triangle " + area);
+    </script>
+  </body>
+</html>
