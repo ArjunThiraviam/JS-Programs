@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess a number between 1 to 10</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var num = Math.ceil(Math.random() *10);
+
+      var ran_num = window.prompt("Guess a number from 1 to 10");
+
+      if(ran_num == num) {
+        document.write("Correct guess");
+      }
+      else {
+        document.write("Try Again<br>");
+        document.write("The number was " + num);
+      }
+    </script>
+  </body>
+</html>
