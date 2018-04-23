@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculate days till next Christmas</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var today_date = new Date();
+      var cms_date = new Date(today_date.getFullYear(), 11,25);
+
+      if (today_date.getMonth() >= 11 && today_date.getDate() >25) {
+        cms_date.setFullYear()(cms_date.getFullYear()+1);
+      }
+      var one_day = 1000*60*60*24;
+      document.write(Math.ceil(((cms_date.getTime() - today_date.getTime())/one_day)) + " days left to go <br> Merry Chritmas!" )
+    </script>
+
+  </body>
+</html>
