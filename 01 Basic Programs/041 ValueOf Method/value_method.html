@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Defining and Using valueOf() method</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Complex(x,y) {
+        this.numbera = x;
+        this.numberb = y;
+      }
+
+      new Complex (0,0);
+
+      Complex.prototype.valueOf =  function(){
+        return this.numbera;
+      };
+      Complex.prototype.toString = function(){
+        return this.numbera, this.numbery;
+      };
+
+      const c = new Complex(4,1);
+
+      x = c*2;
+      document.write("The value becomes: " +x+"<br>");
+
+      x = Math.sqrt(c);
+      document.write("The value becomes: " +x+"<br>");
+
+    </script>
+  </body>
+</html>
