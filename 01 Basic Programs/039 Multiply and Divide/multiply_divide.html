@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiply and Divide two numbers</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      Enter First number : <input type="text" id="first" value="">
+      Enter Second number : <input type="text" id="second" value="">
+
+      <input type="button" name="" onclick="Multiply()" value="Multiply">
+      <input type="button" name="" onclick="Divide()" value="Divide">
+
+      <p>The Result is :<br>
+      <span id="result"></span>
+      </p>
+    </form>
+    <script type="text/javascript">
+
+      function Multiply() {
+        var a = document.getElementById('first').value;
+        var b = document.getElementById('second').value;
+        var ans;
+
+        ans = a * b;
+        document.getElementById("result").innerHTML = ans;
+      }
+      function Divide() {
+        var a = document.getElementById('first').value;
+        var b = document.getElementById('second').value;
+        var ans;
+
+        ans = a / b;
+        document.getElementById("result").innerHTML = ans;
+      }
+
+
+    </script>
+  </body>
+</html>
