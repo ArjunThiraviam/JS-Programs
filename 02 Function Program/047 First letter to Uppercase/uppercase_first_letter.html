@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Converts first letter of each word of the string in upper case.</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function uppercase(str) {
+        var arr = str.split(' ');
+        var new_arr = [];
+
+        for(var x =0;x <arr.length;x++) {
+          new_arr.push(arr[x].charAt(0).toUpperCase()+arr[x].slice(1));
+        }
+        return new_arr.join(' ');
+      }
+
+      document.write("The sentence becomes: <br> " + uppercase("i am learning javascript."));
+    </script>
+  </body>
+</html>
