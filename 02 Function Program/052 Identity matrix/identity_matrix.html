@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS to generate an Identity matrix</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function identity_matrix(size) {
+        var i;
+        var j;
+
+        document.write("Identity matrix is: <br><br> ");
+
+        for(i=0;i<size;i++) {
+          for(j=0;j<size;j++) {
+            if (i==j) {
+              document.write(" 1 ");
+            }
+            else {
+              document.write(" 0 ");
+            }
+          }
+          document.write('<br>');
+        }
+      }
+
+      identity_matrix(5);
+    </script>
+  </body>
+</html>
