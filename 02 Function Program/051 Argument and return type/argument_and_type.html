@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript to Detect Data Types</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function detect_data_type(value) {
+        var data_types = [Function,RegExp,Number,String,Boolean,Object],x,length;
+        if(typeof value === "object"|| typeof value === "function") {
+          for(x=0,length =data_type.length;x<length;x++) {
+            if(value instanceof data_types[x]) {
+              return data_type[x];
+            }
+          }
+        }
+        return typeof value;
+      }
+
+      document.write("Data type of the frist input is:" + detect_data_type(12));
+
+      document.write("<br>Data type of the second input is:" +detect_data_type('JavaScript'));
+
+      document.write("<br>Data type of the third input is:" +detect_data_type(false));
+
+    </script>
+
+  </body>
+</html>
