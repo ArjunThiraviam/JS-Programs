@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Find the second lowest and second greatest number from array</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function lower_greater(num) {
+      num.sort(function(x, y) {
+        return x - y;
+      });
+      console.log(num);
+
+      var n = num;
+      var result = [];
+      console.log(result);
+
+      // for (var j = 1; j < num.length; j++) {
+      //   if (num[j - 1] !== num[j]) {
+      //     n.push(num[j]);
+      //     console.log(num[j]);
+      //   }
+      // }
+      result.push(num[1], num[num.length - 2]);
+      return result.join(',');
+    }
+    document.write("The second largest and smallest number form the array are " + lower_greater([60, 92, 3, 7, 14, 123, 34, 54, 57]));
+  </script>
+</body>
+
+</html>
