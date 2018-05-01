@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Find Facotrial</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function find_factors(n) {
+        var fact_arr = [], i;
+
+        for(i=1;i<=Math.floor(Math.sqrt(n));i++) {
+          if(n%i === 0) {
+
+            console.log(i);
+            fact_arr.push(i);
+            console.log(fact_arr);
+            if(n/i !==i) {
+              console.log(n/i);
+              fact_arr.push(n/i);
+            }
+
+          }
+
+        }
+
+        fact_arr.sort(function(x,y) {
+          return x -y;
+        });
+        return fact_arr;
+      }
+
+      document.write("The factors of the numbers are ");
+
+      document.write("<br>[" + find_factors(15) + "]");
+      // document.write("<br>[" + find_factors(16) + "]");
+      // document.write("<br>[" + find_factors(17) + "]");
+    </script>
+  </body>
+</html>
