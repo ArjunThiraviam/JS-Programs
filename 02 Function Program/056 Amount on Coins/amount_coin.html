@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amount to Coins</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function amount_change(amount, coins){
+        if(amount == 0) {
+          return [];
+        }
+        else {
+          if(amount >=coins[0]) {
+            left = (amount - coins[0])
+            return [coins[0]].concat(amount_change(left,coins));
+          }
+          else {
+            coins.shift();
+            return amount_change(amount, coins);
+          }
+        }
+      }
+
+      document.write("The amount will be made a : " + amount_change(105,[25,10,5,2,1]));
+    </script>
+  </body>
+</html>
