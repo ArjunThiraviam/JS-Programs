@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Extract unique character from a string</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function unique_char(str1) {
+        var str = str1;
+        var unique= "";
+
+        for(var x=0;x<str.length;x++) {
+          if(unique.indexOf(str.charAt(x))== -1) {
+            unique += str[x];
+          }
+        }
+        return unique;
+      }
+
+      document.write("Output is : " + unique_char("thequickbrownfoxjumpsoverthelazydog"));
+    </script>
+  </body>
+</html>
