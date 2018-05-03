@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Apply Bubble Sort</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function bubble_Sort(num) {
+        var swap_num;
+        var n = num.length-1;
+        var j = 0;
+        var x = num;
+
+        do {
+          swap_num = false;
+
+          for (var i=0;i<n;i++) {
+            if(x[i] < x[i+1]) {
+              var temp = x[i];
+              x[i] = x[i+1];
+              x[i+1] = temp;
+              swap_num =true;
+            }
+          }
+          n--;
+        }
+        while (swap_num);
+        return x;
+      }
+      document.write("After sorting in descending order : <br>" +bubble_Sort([1,99,4,54,22,48,0,3,23,2,4,67,24,34,13]));
+    </script>
+  </body>
+</html>
