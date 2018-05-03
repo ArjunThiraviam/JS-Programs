@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Find Bigger elements in array</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function find_element(num) {
+      return function(value, index, array) {
+        return (value >= num);
+      };
+    }
+    var result = [0, 2, 11, 45, 4, 51, 64, 10, 3, 23, 1].filter(find_element(4));
+
+    document.write("Elements bigger than the entered element is : " + result);
+  </script>
+</body>
+
+</html>
