@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>For in loop</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var Student = function(name) {
+        this.name = name;
+      }
+      Student.prototype.age = 26;
+      Student.prototype.country = "India";
+
+      var student = new Student("Arjun");
+
+      for(var item in student) {
+        if(student.hasOwnProperty(item)) {
+          document.write("Student name is : " +student[item] + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>
