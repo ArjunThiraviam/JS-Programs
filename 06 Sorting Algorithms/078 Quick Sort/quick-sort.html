@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quick Sort</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function quick_Sort(myarray) {
+        if(myarray.length <= 1) {
+          return myarray;
+        } else {
+          var left = [];
+          var right = [];
+          var newArray = [];
+          var pivot = myarray.pop();
+          var length = myarray.length;
+
+          for(var i =0; i<length; i++) {
+            if(myarray[i] <= pivot) {
+              left.push(myarray[i]);
+            }
+            else {
+              right.push(myarray[i]);
+            }
+          }
+          return newArray.concat(quick_Sort(left),pivot,quick_Sort(right));
+        }
+      }
+
+      var input_array = [7,30,0,-5,10,-7,3,2];
+
+      document.write("Array Before performaing Quick sort :" + input_array);
+
+      var sortedArray = quick_Sort(input_array);
+      document.write("<br>Sorted array is : " + sortedArray);
+    </script>
+  </body>
+</html>
