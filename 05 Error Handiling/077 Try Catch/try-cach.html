@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Try Catch</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+      try {
+        addalert("Welcome guest!")
+      } catch (err) {
+        document.getElementById("demo").innerHTML = err.message;
+      }
+    </script>
+  </body>
+</html>
