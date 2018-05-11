@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Open Window</title>
+  </head>
+  <body>
+    <p>Click the button to open a new Window</p>
+    <button type="button" name="button" onclick="open_window()">Click here</button>
+    <script type="text/javascript">
+      function open_window () {
+        var w = Window.open();
+        w.document.open();
+        w.document.write("<h1>Welcome to JS</h1>");
+        w.document.close();
+      }
+    </script>
+  </body>
+</html>
