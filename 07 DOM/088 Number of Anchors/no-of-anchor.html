@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Number of Anchor</title>
+  </head>
+  <body>
+
+    <a href="#">link</a><br>
+    <a href="#">JavaScript</a><br>
+    <a href="#">Example</a><br>
+    <a href="#">For Anchor Collection</a><br>
+
+    <p id="example"></p>
+
+    <script type="text/javascript">
+      document.getElementById("example").innerHTML = "Number of anchors are : " + document.getElementsByTagName("a").length;
+    </script>
+  </body>
+</html>
