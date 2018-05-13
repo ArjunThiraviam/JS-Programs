@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Count, Display, Remove  Dropdown list</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <select class="" name="" id="selected">
+        <option value="">Red</option>
+        <option value="">Blue</option>
+        <option value="">Orange</option>
+        <option value="">Green</option>
+        <option value="">Black</option>
+        <option value="">White</option>
+
+        <input type="button" onclick="get_data()" name="" value="Count and list of colors">
+        <input type="button" onclick="remove_color()" name="" value="Remove selected colors">
+      </select>
+    </form>
+
+    <script type="text/javascript">
+      function get_data() {
+        var a = document.getElementById("selected");
+        var list = "Number of color in dropdown list : ";
+
+        l = document.getElementById("selected").length;
+        list = list + l;
+
+        for(var i =0; i<a.length;i++) {
+          list = list + " \n" + a.options[i].text;
+        }
+        alert(list);
+      }
+      function remove_color() {
+        var a = document.getElementById("selected");
+        alert("Selected color removed");
+        a.remove(a.selectedIndex);
+      }
+    </script>
+  </body>
+</html>
