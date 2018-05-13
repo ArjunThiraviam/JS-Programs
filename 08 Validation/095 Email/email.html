@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Email Validation</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function valid_email(email_id) {
+        var mailformat = /^\w+([\.~]?\w+)*@\w+([\.~]?w)*(\.\w{2,3})+$/;
+
+        if(mailformat.test(email_id)) {
+          document.write("You Entered the valid email address!");
+        }
+        else {
+          document.write("You Entered the invalid email address!")
+        }
+      }
+      valid_email('arjun@gmail.com')
+    </script>
+  </body>
+</html>
