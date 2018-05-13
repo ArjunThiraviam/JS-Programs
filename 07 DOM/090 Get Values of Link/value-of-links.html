@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Value of Links</title>
+  </head>
+  <body>
+    <p><a id="youTube" type="text/html" hreflang="en-in" rel="nofollow" target="_self" href="http://www.youtube.com/">YouTube</a></p>
+
+    <button type="button" name="button" onclick="getAttributes()">Click Here</button>
+
+    <script type="text/javascript">
+      function getAttributes() {
+        var a = document.getElementById("youTube").href;
+        alert('The value of the href attribute of the link is : ' +a);
+
+        var b = document.getElementById("youTube").hreflang;
+        alert('The value of the hreflang attribute of the link is : ' +b);
+
+        var c = document.getElementById("youTube").rel;
+        alert('The value of the rel attribute of the link is : ' +c);
+
+        var d = document.getElementById("youTube").target;
+        alert('The value of the target attribute of the link is : ' +d);
+
+        var e = document.getElementById("youTube").type;
+        alert('The value of the type attribute of the link is : ' +e);
+      }
+    </script>
+  </body>
+</html>
