@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <iframe src="#" id ="myframe" width="300" height="350"></iframe>
+
+    <p>Click the button to display the height of the iframe</p>
+
+    <button type="button" name="button" onclick="myFunction()">Click Here</button>
+
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("myframe").height;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
