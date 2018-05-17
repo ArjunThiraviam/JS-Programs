@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Check Alpha Numeric</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function check_alphanumeric(str) {
+        regexp = /^[A-Za-z0-9]+$/;
+
+        if(regexp.test(str)) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+
+      document.write(check_alphanumeric("34rjj452"));
+
+      document.write("<br>" + check_alphanumeric("34rjj452#$"));
+
+      document.write("<br>" + check_alphanumeric("asdsagg"));
+    </script>
+  </body>
+</html>
